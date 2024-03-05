@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+function reloadPage()
+{
+location.reload();
+}
+</script>
+
+    <style>
+      .heading {
+        text-align: center;
+        padding: 5px 0px 10px;
+        font-size: 30px;
+        border-bottom: solid 1px grey;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .aboutcontainer {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        
+      }
+      .aboutpara1 {
+        padding: 50px;
+        line-height: 1.6;
+        width: 40%;
+        margin: 10px;
+      }
+
+      .aboutpara2 {
+        padding: 10px; 
+        width: 40%; 
+      }
+      p {
+        margin: 20px;
+      }
+    .slideshow-container {
+  max-width: 400px;
+  height: 600px;
+  position: relative;
+  margin: auto;
+  padding: 0%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  margin-right: 50px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  margin-right: 400px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: red;
+  border-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: black;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+    </style>
+  </head>
+  <body>
+     <div class="container">
+      <div class="logo">
+        <img
+          src="https://innovation.indianrailways.gov.in/StaticFiles/Login/img/logo.png"
+        />
+      </div>
+      <div class="logo">
+        <img
+          src="https://innovation.indianrailways.gov.in/StaticFiles/Login/img/logo_2_1.png"
+        />
+      </div>
+      <div class="logo">
+        <img
+          src="https://innovation.indianrailways.gov.in/StaticFiles/Login/img/azadieng.png"
+        />
+      </div>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="#">Home</a>
+      <a href="About-Us.html">About Us</a>
+      <a href="Policy.html">Policy</a>
+      <a href="Challenges.html">Challenges</a>
+      <a href="Notifications.html">Notifications</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Contact-Us.html">Contact Us</a>
+      <a href="Login.html">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
+    <div class="aboutcontainer">
+      <div class="aboutpara1">
+        <h1 style="color: #0b4987; text-align: center; margin-bottom: 10px;">Login Now</h1>
+        <h1 style="border-bottom: solid 2px #f58e33;"></h1>
+        <div class="login-details">
+            <label name = "Username"><b>Username</B></label><br>
+                <input type="text" name="Username" class="username">
+                   <label name = "Username"><b>Password</B></label><br>
+                <input type="password" name="Password" class="username">
+                    <div style="display: flex; justify-content: space-between;margin-bottom: 20px;">
+                <button class="login-button" >Login</button>
+                <a href="#" style="margin-top: 40px;" onclick="reloadPage()" >Refresh</a>
+                </div>
+                <div style="display: flex;">
+                <a href="Registration.html" class="register"><i class="material-icons">account_box</i>New User Signup</a>
+</div>
+        </div>
+      </div>
+      <div class="aboutpara2">
+          <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="https://innovation.indianrailways.gov.in/StaticFiles/Login/img/slide1.jpg" style="width: 100%; height: 100%;" 
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="https://innovation.indianrailways.gov.in/StaticFiles/Login/img/chart.jpg" style="width: 100%; height: 100%;"/>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          src="https://innovation.indianrailways.gov.in/StaticFiles/Login/img/collab.jpg" style="width: 400px;height: 100%;"
+         
+        />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)"> ❮ </a>
+      <a class="next" onclick="plusSlides(1)"> ❯ </a>
+
+      <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    </div>
+    <br />
+
+    
+      </div>
+    </div>
+
+    <footer class="footer">
+      Developed and maintained by RailTel Corporation of India Ltd.
+    </footer>
+
+    <script>
+      
+function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>

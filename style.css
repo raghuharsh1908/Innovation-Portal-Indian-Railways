@@ -1,0 +1,401 @@
+* {
+  padding: 0%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+}
+
+img {
+  height: 60px;
+  width: 150px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #162b93;
+  padding: 10px 1px 10px 10px;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 15px;
+}
+
+.topnav a:hover {
+  color: yellow;
+}
+
+.topnav a:active {
+  color: yellow;
+}
+
+.topnav .icon {
+  display: none;
+  color: #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*-----------   Slideshow css   ---------*/
+
+.slideshow-container {
+  max-width: 1000px;
+  height: 250px;
+  position: relative;
+  margin: auto;
+  padding: 0%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: red;
+  border-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: black;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/*----Footer-----*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #162b93;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*---Description----*/
+.description {
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  background-color: #c1c6c9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.para {
+  margin: 20px;
+}
+
+/*-------Policy-----------*/
+
+.heading {
+  text-align: center;
+  padding: 5px 0px 10px;
+  font-size: 30px;
+  border-bottom: solid 1px grey;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.big {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.small {
+  height: 220px;
+  width: 60%;
+  border-radius: 10px;
+  border-bottom-color: #0b4987;
+
+  margin-top: 60px;
+}
+
+.implinks {
+  padding: 10px;
+  border-bottom: solid 1px blue;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #c1e6f5;
+  font-weight: bolder;
+  color: #0b4987;
+}
+
+.ticks {
+  padding: 30px;
+}
+
+h3 {
+  line-height: 1.6;
+  color: #0b4987;
+}
+
+/*---------Challenges---------*/
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.butto {
+  margin: 10px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: cornflowerblue;
+}
+
+.butto:active {
+  color: cornflowerblue;
+}
+
+.butto:hover {
+  background-color: #0b4987;
+  color: white;
+}
+
+.not-found {
+  display: flex;
+  justify-content: center;
+}
+
+/*-------Galllery------*/
+.gallerycont {
+  display: flex;
+  justify-content: center;
+}
+
+/*---------Login Page----*/
+
+.login-details {
+  padding: 50px 30px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.username {
+  margin-top: 10px;
+  width: 300px;
+  height: 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: solid 1px #0b4987;
+  outline: none;
+  padding-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+}
+
+.username:active {
+  background-color: #c1e6f5;
+}
+
+.login-button {
+  padding: 5px 10px 5px 10px;
+  margin: 30px 0px 0px 0px;
+  border-radius: 5px;
+  background-color: #0b4987;
+  border-style: none;
+  color: white;
+  font-size: 20px;
+}
+
+.login-button:hover {
+  background-color: #f58e33;
+  color: white;
+  font-size: 120%;
+  cursor: pointer;
+}
+
+.register {
+  font-size: 20px;
+  color: #0b4987;
+}
+.register:hover {
+  color: #f58e33;
+}
+
+.regitercontainer {
+  height: 500px;
+  padding: 20px;
+}
+
+.col-sm-12 {
+  height: 200px;
+}
+
+.row {
+  padding: 50px 30px 60px 20px;
+}
+
+.apply {
+  width: 500px;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 5px;
+  border: solid 1px grey;
+  height: 30px;
+}
+
+.apply:active {
+  background-color: #c1e6f5;
+}
+
+.row p {
+  line-height: 1.6;
+}
+
+.userinfo {
+  display: flex;
+  justify-content: flex-start;
+}
+.userinfodet {
+  margin-top: 10px;
+  width: 200px;
+  height: 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: solid 1px #0b4987;
+  outline: none;
+  padding-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+}
+.submit-form {
+  margin: 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  background-color: #0b4987;
+}
+.submit-form:hover {
+  cursor: pointer;
+  background-color: #f58e33;
+}
+.submit-form:active {
+  transform: translateY(4px);
+}

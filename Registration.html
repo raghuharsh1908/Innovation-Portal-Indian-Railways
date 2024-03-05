@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+     <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="https://innovation.indianrailways.gov.in/StaticFiles/Login/img/logo.png"
+        />
+      </div>
+      <div class="logo">
+        <img
+          src="https://innovation.indianrailways.gov.in/StaticFiles/Login/img/logo_2_1.png"
+        />
+      </div>
+      <div class="logo">
+        <img
+          src="https://innovation.indianrailways.gov.in/StaticFiles/Login/img/azadieng.png"
+        />
+      </div>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="About-Us.html">About Us</a>
+      <a href="Policy.html">Policy</a>
+      <a href="Challenges.html">Challenges</a>
+      <a href="Notifications.html">Notifications</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Contact-Us.html">Contact Us</a>
+      <a href="Login.html">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="regitercontainer">
+        <div class="col-sm-12">
+          <h1 style="color: #0b4987;text-align: center;margin-bottom: 50px; border-bottom: solid 2px #f58e33;">Registration Form</h1>
+          <h2 style="text-align: left; margin-left: 40px;">Innovator Profile</h2>
+          <div class="row">
+            <h3 style="text-align: left; color: black;">Applying As&nbsp;&nbsp;<span style="color: red; font-size: 50%;">&starf;</span></h3>
+            <form action="post">     
+            <select name="Applying-As   " id="cars" class="apply"> 
+    <option value="0">--Select--</option>
+    <option value="Individual Innovator">Individual Innovator</option>
+    <option value="Startup">Startup</option>
+    <option value="MSME">MSME</option>
+    <option value="NGO">NGO</option>
+    <option value="Section 8 Company">Section 8 Company</option>
+    <option value="Company/LLP/Joint Venture/Partnership">Company/LLP/Joint Venture/Partnership</option>
+    <option value="R&D Organisation">R&D Organisation</option>
+    <option value="Others">Others</option>
+  </select>
+  <p style="line-height: 1.6;">
+  <ul style="margin-top: 20px;"> 
+    <li>Startups, as defined and recognized by Department for Promotion of Industry & Internal Trade (DPIIT), Ministry of Commerce and Industry, Government of India.</li>
+<li>Any Indian company incorporated under the Companies, Act1956/2013, primarily a Micro, Small and Medium Enterprises (MSME) as defined in the MSME Act, 2006.</li>
+<li>Individual innovators and R&D institutions are also encouraged to apply.</li>
+<li> Any partnership firm, company or LLP incorporated under relevant laws.</li>
+<ol style="margin-left: 50px;">
+<li>Support in form of Grant will not be given in this case.</li>
+<li>Cost of scaling-up will be borne by the firm.</li>
+</ol>
+</ul>
+</p>
+
+<p style="margin: 20px;"><h3 style="color: black;">Authorized Person Information</h3></p>
+<div class="userinfo">
+    <div style="margin: 20px;">
+            <h4>Name</h4>       
+        <input type="text" class="userinfodet" name="Username">
+    </div>
+    <div style="margin: 20px;">
+            <h4>Gender</h4>       
+        <select class="userinfodet" name="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+            </select>
+    </div>
+    <div style="margin: 20px;">
+            <h4>AADHAAR</h4>       
+        <input type="text" class="userinfodet" name="AADHAAR">
+    </div>
+    <div style="margin: 20px;">
+            <h4>PAN</h4>       
+        <input type="text" class="userinfodet" name="PAN">
+    </div>
+</div>
+<div class="userinfo">
+    <div style="margin: 20px;">
+            <h4>Mobile Number</h4>       
+        <input type="number" class="userinfodet" name="Mobile">
+    </div>
+    <div style="margin: 20px;">
+            <h4>Email</h4>       
+        <input type="email" class="userinfodet" name="Email" required>
+    </div>
+    <div style="margin: 20px;">
+            <h4>Address</h4>       
+        <input type="text" class="userinfodet" name="Address" style="width: 450px;">
+    </div>
+
+</div>
+<div>
+    <input type="submit" name="Submit" class="submit-form"> <a href="Login.html" style="color: #0b4987; cursor: pointer;">Login</a>
+</div>
+
+</form>
+            </div>
+        </div>
+
+    </div>
+
+
+       <footer class="footer">
+      Developed and maintained by RailTel Corporation of India Ltd.
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+  </body>
+</html>

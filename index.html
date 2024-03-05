@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="https://innovation.indianrailways.gov.in/StaticFiles/Login/img/logo.png"
+        />
+      </div>
+      <div class="logo">
+        <img
+          src="https://innovation.indianrailways.gov.in/StaticFiles/Login/img/logo_2_1.png"
+        />
+      </div>
+      <div class="logo">
+        <img
+          src="https://innovation.indianrailways.gov.in/StaticFiles/Login/img/azadieng.png"
+        />
+      </div>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="#">Home</a>
+      <a href="About-Us.html">About Us</a>
+      <a href="Policy.html">Policy</a>
+      <a href="Challenges.html">Challenges</a>
+      <a href="Notifications.html">Notifications</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Contact-Us.html">Contact Us</a>
+      <a href="Login.html">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="https://innovation.indianrailways.gov.in/Staticfiles/slide/digital.jpg"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="https://innovation.indianrailways.gov.in/Staticfiles/slide/chart2.jpg"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          src="https://innovation.indianrailways.gov.in/Staticfiles/slide/new-xsm.jpg"
+          style="width: 100%; height: 100%"
+        />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)"> ❮ </a>
+      <a class="next" onclick="plusSlides(1)"> ❯ </a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="description">
+      <div class="para">
+        <h1 style="margin-bottom: 5px">THRUST ON INNOVATION</h1>
+        <br />
+        <br />
+        <p style="text-align: left; font-size: 20px; line-height: 1.6">
+          Ministry of Railways to support Indian
+          Startups/MSMEs/Entrepreneurs/Innovators with funds<br />
+          for development of innovative products & low cost<br />
+          solutions for IR. Objective is to leverage innovative<br />
+          technologies developed by Indian
+          Startups/MSMEs/Innovators/Entrepreneurs to improve operational
+          efficiency and safety on Indian Railways
+        </p>
+      </div>
+      <div class="para">
+        <p style="font-size: 15px; line-height: 1.6">
+          <b
+            >Objective is to leverage innovative technologies developed by
+            Indian Startups/MSMEs/Innovators/Entrepreneurs to improve
+            operational<br />
+            efficiency and safety on Indian Railways
+          </b>
+        </p>
+        <br />
+        <ul style="padding-left: 10px; line-height: 1.6">
+          <li>
+            Ministry aims to address quality, reliability and
+            maintainability-related issues of the Indian Railways
+          </li>
+          <li>
+            Funding scheme will be on a cost sharing basis in equal proportion
+            (50:50), between Indian Railways and
+            Startup/MSME/Innovator/Entrepreneur
+          </li>
+          <li>
+            Under the policy, the Startup/MSME/Innovator/Entrepreneur will have
+            exclusive ownership of Intellectual Property Rights (IPR) created in
+            the project
+          </li>
+        </ul>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+
+    <footer class="footer">
+      Developed and maintained by RailTel Corporation of India Ltd.
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+      /*slideshow*/
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>
